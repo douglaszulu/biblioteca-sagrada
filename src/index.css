@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif-sacred: "Cinzel", Georgia, serif;
+  --font-serif-reading: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar and ambient animation classes */
+@keyframes breathing {
+  0%, 100% {
+    transform: scale(0.95);
+    opacity: 0.55;
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.2);
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.95;
+    box-shadow: 0 0 45px rgba(245, 158, 11, 0.45);
+  }
+}
+
+.animate-breathing-circle {
+  animation: breathing 4.5s ease-in-out infinite;
+}
+
+/* Focused reading layout options */
+.focused-parchment {
+  background-color: #fcf8f2;
+  color: #2e261f;
+  border: 1px solid #eadecd;
+  box-shadow: 0 4px 20px rgba(46, 38, 31, 0.08);
+}
+
+.focused-dark {
+  background-color: #121213;
+  color: #dfdcd8;
+  border: 1px solid #232325;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Biblioteca Sagrada",
+  "description": "Um refúgio espiritual acolhedor com orações de proteção, salmos poderosos, áudios guiados para ansiedade e orações personalizadas com Inteligência Artificial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
